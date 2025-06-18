@@ -1,446 +1,175 @@
-/* 전체 공통 폰트 */
 * {
-    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-/* Landing Page 전체 프레임 */
-.landing-page {
+    font-family: "Lexend", sans-serif;
+  }
+  
+  body {
+    background-color: #15151f;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .landing-page {
     width: 1080px;
     height: 1920px;
-    background-color: #15151F;
+    margin: 0 auto;
+    padding: 60px 40px;
+    background-color: #15151f;
+    color: #fafafa;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 40px;
-}
-
-/* 타이틀 텍스트 */
-.title {
-    color: #F2F2F2;
-    font-size: 50px;
+    justify-content: space-between;
+  }
+  
+  .title-box {
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .title-main {
+    font-size: 64px;
     font-weight: 700;
     line-height: 1.4;
-    margin-bottom: 60px;
-}
-
-/* 로고 이미지 */
-.logo img {
-    width: 800px;
-    max-width: 100%;
-    height: auto;
+  }
+  
+  .logo-box {
     margin: 40px 0;
+  }
+  
+  .logo-box img {
+    width: 800px;
+    height: 400px;
     object-fit: contain;
-}
-
-/* 서브 텍스트 */
-.sub-title p {
+  }
+  
+  .subtitle-box {
+    text-align: center;
     font-size: 32px;
-    font-weight: 400;
     line-height: 1.8;
-    color: #E0E0E0;
-    margin-bottom: 80px;
-}
-
-/* 버튼 컨테이너 (가운데 정렬) */
-.button-container {
+  }
+  
+  .button-box {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  
+  .start-button {
     display: flex;
+    align-items: center;
     justify-content: center;
-}
-
-/* 레이스 버튼 */
-.race-button {
-    background-color: #FA1D00;
-    color: #FFFFFF;
-    border: 4px solid #FF4000;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
-    width: 320px;
-    height: 320px;
-    font-size: 64px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 1.3;
-    padding: 20px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 8px 20px rgba(255, 50, 50, 0.4);
-}
-
-/* 호버 효과 */
-.race-button:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 30px rgba(255, 30, 30, 0.8);
-}
-
-.main-page {
-    background-color: #15151F;
-    color: white;
-    font-family: 'Noto Sans KR', sans-serif;
-    width: 1080px;
-    height: 1920px;
-    padding: 60px 40px;
-    box-sizing: border-box;
-}
-
-.main-heading {
-    font-size: 42px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.main-image img {
-    width: 100%;
-    max-width: 800px;
-    display: block;
-    margin: 0 auto 30px;
-    border-radius: 8px;
-}
-
-.highlight-box {
-    background-color: transparent;
-    color: #FF4B2B;
-    text-align: right;
-    padding-right: 20px;
-    margin-bottom: 20px;
-}
-
-.highlight-title {
-    font-size: 50px;
-    font-weight: 900;
-    margin: 0;
-}
-
-.highlight-quote {
-    font-size: 22px;
-    line-height: 1.6;
-    font-weight: 400;
-    margin: 10px 0;
-}
-
-.description-box {
-    background-color: #1f1f2e;
-    border-radius: 8px;
-    padding: 30px;
-    margin-bottom: 40px;
-}
-
-.description-main {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-
-.description-sub {
-    font-size: 20px;
-    line-height: 1.6;
-}
-
-.description-sub .highlight {
-    font-weight: bold;
-    text-decoration: underline;
-    color: #FFFFFF;
-}
-
-.section-title {
-    font-size: 26px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.section-subtitle {
-    font-size: 18px;
-    text-align: center;
-    color: #BBBBBB;
-    margin-bottom: 30px;
-}
-
-.button-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 90%;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.main-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #000000;
-    background-color: white;
-    border: 3px solid #FF4B2B;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.main-button:hover {
-    background-color: #FF4B2B;
-    color: white;
-    transform: translateY(-3px);
-}
-
-.ranking-page {
-    background-color: #ffffff;
-    color: #111111;
-    font-family: 'Noto Sans KR', sans-serif;
-    width: 1080px;
-    height: 1920px;
-    padding: 40px 60px;
-  }
-  
-  .ranking-header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .nav-back {
-    font-size: 26px;
-    margin-bottom: 10px;
-    text-align: left;
-  }
-  
-  .ranking-header {
-    background-color: #0f0f1f;
-    padding: 20px 40px;
-    border-bottom: 1px solid #444;
-    color: white;
-  }
-  
-  /* 상단 바 구성 */
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .nav-left .back-button {
-    font-size: 30px;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .nav-title {
-    font-size: 22px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    flex: 1;
-  }
-  
-  /* 탭 스타일 */
-  .nav-tabs {
-    display: flex;
-    justify-content: space-around;
-    background-color: #0f0f1f;
-    padding: 10px 0;
-  }
-  
-  .nav-tab {
-    color: #dddddd;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 8px 16px;
-    border-bottom: 3px solid transparent;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .nav-tab:hover {
-    color: #ff4b2b;
-  }
-  
-  .nav-tab.active {
-    color: #ff4b2b;
-    border-bottom: 3px solid #ff4b2b;
-  }
-  
-  .ranking-title {
-    font-size: 40px;
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .point-section {
-    margin-bottom: 40px;
-  }
-  
-  .point-section h3 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .point-section p {
-    font-size: 20px;
-    margin-left: 10px;
-    margin-bottom: 4px;
-  }
-  
-  .table-section {
-    margin-bottom: 60px;
-  }
-  
-  .table-section h3 {
-    font-size: 26px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    text-align: center;
-  }
-  
-  .ranking-img {
-    display: block;
-    margin: 0 auto;
-    max-width: 90%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-
-  /* Team Page */
-.team-page {
-    background-color: #ffffff;
-    color: #111;
-    font-family: 'Noto Sans KR', sans-serif;
-    width: 1080px;
-    height: 1920px;
-    padding: 40px 40px;
-  }
-  
-  .team-container {
-    margin-top: 20px;
-  }
-  
-  .team-title {
+    background-color: #fa1d00;
+    color: #fafafa;
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
-    margin-bottom: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    box-shadow: 0 0 40px #fa1d00;
+    transition: transform 0.3s;
   }
   
-  .team-description {
-    font-size: 20px;
-    text-align: center;
-    color: #333;
-    margin-bottom: 40px;
+  .start-button:hover {
+    transform: scale(1.05);
   }
-  
-  /* 팀 그리드 레이아웃 (2열) */
-  .team-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px 20px;
-    justify-items: center;
-  }
-  
-  .team-item {
+
+  /* main page */
+  .main-page {
+    width: 1080px;
+    height: 1920px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #15151f;
+    color: #fafafa;
+    font-family: 'Lexend', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: start;
   }
   
-  .team-car {
-    width: 260px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .team-name {
-    font-size: 20px;
-    font-weight: 500;
+  .main-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
     text-align: center;
   }
-
-  .tech-page {
-    background-color: #ffffff;
-    color: #111;
-    font-family: 'Noto Sans KR', sans-serif;
-    width: 1080px;
-    height: 1920px;
-    padding: 40px;
-    box-sizing: border-box;
+  
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    margin: 40px 0;
   }
   
-  .tech-container {
-    margin-top: 20px;
+  .main-image-box img {
+    width: 420px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
   }
   
-  .tech-title {
-    font-size: 36px;
+  .main-text-box {
+    max-width: 500px;
+  }
+  
+  .main-f1-label {
+    color: #fa1d00;
+    font-size: 64px;
+    font-weight: 800;
+  }
+  
+  .main-quote {
+    font-size: 28px;
+    line-height: 1.6;
+  }
+  
+  .description {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 40px;
+  }
+  
+  .desc-strong {
     font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .tech-description {
-    font-size: 20px;
-    text-align: center;
-    color: #333;
-    margin-bottom: 40px;
-  }
-  
-  .tech-image-box {
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  .tech-car {
-    width: 100%;
-    border-radius: 8px;
+    font-size: 32px;
     margin-bottom: 20px;
   }
   
-  /* 공통 태그 스타일 */
-  .tech-tag {
-    position: absolute;
-    background-color: #000;
-    color: white;
-    border: 3px solid red;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 6px 12px;
-    border-radius: 6px;
+  .navigate {
+    margin-top: 60px;
+    text-align: center;
   }
   
-  /* 위치 조정 (이미지 위에 배치) - 아래는 예시값이므로 조정 필요 */
-  .tag-aero {
-    top: 10%;
-    left: 35%;
+  .button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 240px);
+    grid-gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
   }
   
-  .tag-chassis {
-    top: 5%;
-    right: 10%;
+  .nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #fafafa;
+    color: #15151f;
+    font-size: 28px;
+    font-weight: 600;
+    border: 4px solid #fa1d00;
+    border-radius: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
   }
   
-  .tag-tire {
-    top: 30%;
-    left: 45%;
-  }
-  
-  .tag-power {
-    bottom: 5%;
-    left: 15%;
-  }
-  
-  .tag-fuel {
-    bottom: 20%;
-    left: 40%;
-  }
-  
-  .tag-electro {
-    bottom: 5%;
-    right: 10%;
+  .nav-button:hover {
+    background-color: #fa1d00;
+    color: #fafafa;
   }

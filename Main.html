@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <title>Kiosk Main Page</title>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body class="main-page">
-    <div class="main-container">
-        <h1 class="main-heading">Formula One World Championship</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>F1 Main Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.8/lib/p5.min.js"></script>
+    <script src="scripts/sketch_main.js"></script>
+  </head>
+  <body>
+    <div class="main-page">
+      <h1 class="main-title">Formula One World Championship</h1>
 
-        <div class="main-image">
-            <img src="images/main_image.png" alt="F1 차량 이미지" />
+      <div class="main-content">
+        <div class="main-image-box">
+          <img src="images/main_image.png" alt="F1 경기 장면" />
         </div>
 
-        <div class="highlight-box">
-            <h2 class="highlight-title">F1</h2>
-            <p class="highlight-quote">“전 세계 20개국,<br>24번의 레이스,<br>하나의 챔피언<br>가장 빠른 경쟁의 시작”</p>
+        <div class="main-text-box">
+          <h2 class="main-f1-label">F1</h2>
+          <p class="main-quote">
+            “전 세계 20개국,<br />24번의 레이스,<br />하나의 챔피언<br />가장 빠른 경쟁의 시작”
+          </p>
         </div>
+      </div>
 
-        <div class="description-box">
-            <p class="description-main">
-                F1은 국제자동차연맹(FIA)이 주관하는<br />
-                세계 최고의 모터스포츠 대회입니다.
-            </p>
-            <p class="description-sub">
-                최고 시속 350km, 단 2.4초 만에 100km/h에 도달하며<br />
-                <span class="highlight">이곳에서 0.001초가 전설을 만듭니다.</span>
-            </p>
-        </div>
+      <div class="description">
+        <p class="desc-strong">
+          F1은 국제자동차연맹(FIA)이 주관하는<br />세계 최고의 모터스포츠 대회입니다.
+        </p>
+        <p>
+          최고 시속 350km, 단 2.4초 만에 100km/h에 도달하며<br />
+          <strong>이곳에서 0.001초가 전설을 만듭니다.</strong>
+        </p>
+      </div>
 
-        <div class="section-title">F1에 대해 더 알아보세요.</div>
-        <p class="section-subtitle">각종 정보는 아래를 클릭하여 확인할 수 있습니다.</p>
-
+      <div class="navigate">
+        <h2>F1에 대해 더 알아보세요.</h2>
+        <p>각종 정보는 아래를 클릭하여 확인할 수 있습니다.</p>
         <div class="button-grid">
-            <a href="Ranking.html" class="main-button">Ranking</a>
-            <a href="Rule.html" class="main-button">How to play</a>
-            <a href="Team.html" class="main-button">Team</a>
-            <a href="Tec.html" class="main-button">Technology</a>
+          <a href="rank.html" class="nav-button">Ranking</a>
+          <a href="rule.html" class="nav-button">How to play</a>
+          <a href="team.html" class="nav-button">Team</a>
+          <a href="tec.html" class="nav-button">Technology</a>
         </div>
+      </div>
     </div>
-</body>
+    <div id="p5-canvas-container"></div>
+  </body>
 </html>
