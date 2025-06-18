@@ -173,3 +173,199 @@
     background-color: #fa1d00;
     color: #fafafa;
   }
+
+  /* team page */
+  body {
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+    background-color: #15151f;
+  }
+  
+  #p5-container canvas {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .top-bar {
+    background-color: #15151f;
+    color: #fafafa;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .back-button {
+    align-self: flex-start;
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .top-title {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .menu a.active {
+    color: #fa1d00;
+    font-weight: 700;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .section-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .section-sub {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  body {
+    font-family: 'Lexend', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+  }
+  
+  .rule-header {
+    background-color: #15151f;
+    color: #fafafa;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fafafa;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .header-title {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .nav a {
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+  .nav a.active {
+    color: #fa1d00;
+    font-weight: bold;
+  }
+  
+  .rule-title {
+    text-align: center;
+    padding: 40px 20px 20px;
+  }
+  
+  .rule-title h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .rule-title p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  /* tec page */
+  body {
+    font-family: 'Lexend', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+  }
+  
+  /* 공통 상단 네비게이션 */
+  .tec-header {
+    background-color: #15151f;
+    color: #fafafa;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fafafa;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .header-title {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .nav a {
+    color: #bbb;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  .nav a.active {
+    color: #fa1d00;
+    font-weight: 700;
+  }
+  
+  /* 페이지 타이틀 영역 */
+  .tec-title {
+    text-align: center;
+    padding: 40px 20px 20px;
+  }
+  
+  .tec-title h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .tec-title p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
+  /* p5.js 캔버스 컨테이너 */
+  #p5-tec-canvas {
+    width: 1080px;
+    height: 1000px;
+    margin: 0 auto;
+  }
