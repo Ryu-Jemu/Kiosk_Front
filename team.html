@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team Page</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.8/lib/p5.min.js"></script>
+  </head>
+  <body class="team-frame">
+    <!-- 타이틀 영역 -->
+    <div class="title-container">
+      <a href="main.html" class="back-button"></a>
+      <h1 class="header-title">F1<br />Formula One World Championship</h1>
+      <div class="header-info-box">
+        <div class="date-time-row nowrap">
+          <span id="current-date">YYYY.MM.DD</span> |
+          <span id="current-time">HH:MM</span>
+        </div>
+        <div class="timer-line">
+          <span class="next-game">다음 경기까지:</span>
+          <span class="timer-row" id="countdown-timer">D-00</span>
+        </div>
+      </div>
+    </div>
+    <!-- 탭 네비게이션 영역 -->
+    <div class="tap-nav">
+      <div class="tab-container">
+        <div class="tab" data-tab="ranking">Ranking</div>
+        <div class="tab active" data-tab="team">Team</div>
+        <div><a href="tec.html" class="tab" data-tab="tec">Tec</a></div>
+        <div><a href="rule.html" class="tab" data-tab="rule">Rule</a></div>
+        <div class="tab-indicator" id="tab-indicator"></div>
+      </div>
+    </div>
+    <!-- 팀 카드 영역 -->
+     <div class="team-head">
+      <h1 class="team-title">F1 Team</h1>
+      <p class="team-desc">이곳에서 응원하고 싶은 팀을 확인하세요!</p>
+     </div>
+    <div class="team-section">
+      <img src="images/left.png" class="nav-arrow left-arrow" />
+
+      <div class="team-content-wrapper">
+        <div class="team-card" id="team-card"></div>
+
+        <div class="indicator-container" id="indicator"></div>
+
+        <div class="team-description" id="team-description">
+          <u><p class="team-bio"></p></u>
+          <p class="team-drivers"></p>
+          <p class="team-win"></p>
+          <p class="team-tags"></p>
+        </div>
+      </div>
+
+      <img src="images/right.png" class="nav-arrow right-arrow" />
+    </div>
+    <script src="scripts/sketch_team.js"></script>
+    <script src="scripts/sketch_tab.js"></script>
+    <script src="scripts/timeout.js"></script>
+  </body>
+</html>
